@@ -1,6 +1,9 @@
 package pokemons;
 
-public class Pikachu extends Pokemon {
+import electricos.Electrico;
+
+public class Pikachu extends Pokemon 
+	implements Electrico {
 
 	private int velocidad;
 
@@ -33,6 +36,13 @@ public class Pikachu extends Pokemon {
 	@Override
 	public String toString() {
 		return "Pikachu [{" + velocidad + "} (" + getEdad() + ") " + getNombre() + "]";
+	}
+
+
+	@Override
+	public int rayo() {
+		
+		return (int)(2*velocidad/getEdad());
 	}
 
 
