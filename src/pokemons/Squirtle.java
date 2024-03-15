@@ -1,6 +1,9 @@
 package pokemons;
 
-public class Squirtle extends Pokemon {
+import acuatico.Agua;
+
+public class Squirtle extends Pokemon
+	implements Agua {
 
 	private int caparazon;
 
@@ -39,6 +42,14 @@ public class Squirtle extends Pokemon {
 	@Override
 	public String evolucion() {
 		return "Wartortle";
+	}
+
+
+
+
+	@Override
+	public float chorro(int salinidad) {
+		return salinidad/2*getEdad();
 	}
 	
 	

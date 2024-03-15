@@ -1,6 +1,9 @@
 package pokemons;
 
-public class Charmander extends Pokemon {
+import quemadores.Fuego;
+
+public class Charmander extends Pokemon 
+	implements Fuego {
 
 	private int alturaLLama;
 
@@ -32,6 +35,12 @@ public class Charmander extends Pokemon {
 	@Override
 	public String evolucion() {
 		return "Charmeleon";
+	}
+
+
+	@Override
+	public float  llamarada() {
+		return alturaLLama*alturaLLama/(2*getEdad());
 	}
 	
 	
