@@ -13,6 +13,11 @@ public abstract class Pokemon {
 	}
 	
 	
+	// a implementar en las clases derivadas
+	public abstract String evolucion();
+	
+	
+	
 	
 	public int getEdad() {
 		return edad;
