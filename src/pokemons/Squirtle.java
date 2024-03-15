@@ -33,7 +33,7 @@ public class Squirtle extends Pokemon
 
 	@Override
 	public String toString() {
-		return "Squirtel [{" + caparazon + "} (" + getEdad() + ") " + getNombre() + "]";
+		return "Squirtel [{" + caparazon + "} (" + getEdad() + ") " + getNombre() + "] ";
 	}
 
 
