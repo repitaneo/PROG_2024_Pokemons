@@ -17,14 +17,15 @@ public class Start {
 		pokemons[1] = charman;
 		pokemons[2] = squirtle;
 
-		for (int i=0;i<pokemons.length;i++) {
+
+		for (Pokemon p: pokemons) {
 			
-			System.out.println(i);
-			System.out.println(pokemons[i]);
-			System.out.println(pokemons[i].evolucion());
+			System.out.println(p);
+			System.out.println(p.evolucion());
+			p.setEdad(p.getEdad()*2);
+			System.out.println(p);
+			System.out.println("---------------------");
 		}
-		
-		
 		
 		
 		
