@@ -1,13 +1,13 @@
 package pokemons;
 
-public class Squirtel extends Pokemon {
+public class Squirtle extends Pokemon {
 
 	private int caparazon;
 
 	
 	
 	
-	public Squirtel(int edad, String nombre, int caparazon) {
+	public Squirtle(int edad, String nombre, int caparazon) {
 		super(edad, nombre);
 		setCaparazon(caparazon);
 	}
